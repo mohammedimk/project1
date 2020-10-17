@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+{% if new_year %}
+<h1>yes, happy new year</h1>
+    {% else %}
+    <h1>NO</h1>
+
+{% endif %}
+
+    <a href="{{url_for('home')}}">home</a>
+{% endblock %}
